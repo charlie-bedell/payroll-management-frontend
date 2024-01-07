@@ -1,0 +1,85 @@
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+#card-content {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#card-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#card-title h2 {
+  color: #333;
+}
+
+.underline-title {
+  width: 80px;
+  height: 2px;
+  background-color: #333;
+  margin: 8px auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.form-content {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-border {
+  height: 1px;
+  background-color: #ccc;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: 16px;
+}
+
+#submit-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+  background-color: #297fb8;
+}
+
+.signup-wrapper {
+  text-align: center;
+  margin-top: 12px;
+}
+
+#signup {
+  color: #3498db;
+  text-decoration: none;
+}
+
+#signup:hover {
+  text-decoration: underline;
+}

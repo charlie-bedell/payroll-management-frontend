@@ -1,0 +1,37 @@
+/* MAIN NAVBAR */
+#main-nav ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		height: 10vh;
+		border: solid black 1px;
+}
+
+ul {
+		padding: 0;
+}
+
+ul > li {
+		width: 100%;
+}
+
+li > a {
+		color: black;
+}
+
+li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background-color 0.3s ease-in-out;
+}
+
+ul > li:hover {
+		cursor: pointer;
+		background-color: red;
+}
+
+#main-nav ul li {
+		border: solid black 1px;
+}
+/* ^^^^ MAIN NAVBAR ^^^^ */

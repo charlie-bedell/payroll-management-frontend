@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/login.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<title>Login</title>
+	</head>
+	<body>
+		<header>
+			<h1>Login Page</h1>
+			<nav id="main-nav"></nav>
+		</header>
+		<section>
+			<!-- Content for the home page -->
+			<div id="card">
+				<div id="card-content">
+					<div id="card-title">
+						<h2>SIGN UP</h2>
+						<div class="underline-title"></div>
+					</div>
+					<div class="form-wrapper">
+						<form class="form">
+							<label for="user-email">
+								Email
+							</label>
+							<input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+							<label for="user-password">Password
+							</label>
+							<input id="user-password" class="form-content" type="password" name="password" required />
+							<div class="btn-wrapper">
+								<input id="submit-btn" type="submit" name="submit" value="LOGIN" />
+							</div>
+							<div class="signup-wrapper">
+								<a href="login.html" id="login">Already have an account?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<!-- Footer content -->
+		</footer>
+		<script src="scripts/navbar.js"></script>
+		<script defer src="scripts/login.js"></script>
+	</body>
+</html>
