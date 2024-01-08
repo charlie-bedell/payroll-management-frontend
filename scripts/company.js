@@ -135,7 +135,7 @@ function createEmployeePage(employee) {
 }
 
 async function getCompanyName(companyId, token) {
-  const company = await axios.get(`http://localhost:3000/companies/${companyId}`,
+  const company = await axios.get(`https://payroll-api-e4a55d2c7bfa.herokuapp.com/companies/${companyId}`,
                                   { headers: {
                                     'Authorization': `Bearer ${token}`,
                                     'Content-Type': 'application/json'
@@ -146,7 +146,7 @@ async function getCompanyName(companyId, token) {
 document.addEventListener('DOMContentLoaded', async (e) => {
   const token = localStorage.getItem('accessToken');
   try {
-    const requestResult = await axios.get('http://localhost:3000/companies',
+    const requestResult = await axios.get('https://payroll-api-e4a55d2c7bfa.herokuapp.com/companies',
                                     { headers: {
                                       'Authorization': `Bearer ${token}`,
                                       'Content-Type': 'application/json'

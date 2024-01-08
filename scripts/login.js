@@ -7,7 +7,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
   try {
     const username = document.getElementById('user-email').value;
     const password = document.getElementById('user-password').value;
-    const loginResponse = await axios.post('http://localhost:3000/user/login', {
+    const loginResponse = await axios.post('https://payroll-api-e4a55d2c7bfa.herokuapp.com/user/login', {
       username,
       password
     });
