@@ -60,7 +60,7 @@ async function updateEmployee() {
 
   const payload = getEmployeeFields();
 
-  const response = await axios.put(`http://localhost:3000/companies/${companyId}/employees/${employeeId}`, payload, {headers: {
+  const response = await axios.put(`https://payroll-api-e4a55d2c7bfa.herokuapp.com/companies/${companyId}/employees/${employeeId}`, payload, {headers: {
     'Authorization': `Bearer ${token}`,
     'Content-Type': 'application/json'
   }});
@@ -74,7 +74,7 @@ async function deleteEmployee() {
   const companyId = urlParams.get('companyId');
   const employeeId = urlParams.get('employeeId');
 
-  const response = await axios.delete(`http://localhost:3000/companies/${companyId}/employees/${employeeId}`, { headers: {
+  const response = await axios.delete(`https://payroll-api-e4a55d2c7bfa.herokuapp.com/companies/${companyId}/employees/${employeeId}`, { headers: {
     'Authorization': `Bearer ${token}`,
     'Content-Type': 'application/json'
   }});
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', async (e) => {
   const urlParams = new URLSearchParams(window.location.search);
   const companyId = urlParams.get('companyId');
   const employeeId = urlParams.get('employeeId');
-  const result = await axios.get(`http://localhost:3000/companies/${companyId}/employees/${employeeId}`,
+  const result = await axios.get(`https://payroll-api-e4a55d2c7bfa.herokuapp.com/companies/${companyId}/employees/${employeeId}`,
                                    { headers: {
                                      'Authorization': `Bearer ${token}`,
                                      'Content-Type': 'application/json'
