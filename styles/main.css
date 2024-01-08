@@ -1,37 +1,33 @@
-/* MAIN NAVBAR */
-#main-nav ul {
-		list-style: none;
-		display: flex;
-		justify-content: space-around;
-		height: 10vh;
-		border: solid black 1px;
-}
+   body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
-ul {
-		padding: 0;
-}
+    #main-nav {
+      background-color: #333;
+      padding: 10px;
+    }
 
-ul > li {
-		width: 100%;
-}
+    #main-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+			flex: 1;
+			justify-content: space-around;
+    }
 
-li > a {
-		color: black;
-}
+    #main-nav li {
+      margin-right: 15px;
+    }
 
-li {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: background-color 0.3s ease-in-out;
-}
+    #main-nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-ul > li:hover {
-		cursor: pointer;
-		background-color: red;
-}
-
-#main-nav ul li {
-		border: solid black 1px;
-}
-/* ^^^^ MAIN NAVBAR ^^^^ */
+    #main-nav a:hover {
+      color: cyan; /* Change the color on hover */
+    }

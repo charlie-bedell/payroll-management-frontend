@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 65vh;
+	flex-direction: column;
 }
 
 #card-content {
@@ -82,4 +83,8 @@ label {
 
 #signup:hover {
   text-decoration: underline;
+}
+
+#error-display {
+		color: red;
 }

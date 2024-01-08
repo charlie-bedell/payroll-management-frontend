@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/login.css">
 		<link rel="stylesheet" href="styles/main.css">
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<title>Login</title>
 	</head>
 	<body>
@@ -14,7 +14,6 @@
 			<nav id="main-nav"></nav>
 		</header>
 		<section>
-			<!-- Content for the home page -->
 			<div id="card">
 				<div id="card-content">
 					<div id="card-title">
@@ -22,7 +21,7 @@
 						<div class="underline-title"></div>
 					</div>
 					<div class="form-wrapper">
-						<form class="form">
+						<form class="form" id="login-form">
 							<label for="user-email">
 								Email
 							</label>
@@ -39,12 +38,12 @@
 						</form>
 					</div>
 				</div>
+				<p id="error-display"></p>
 			</div>
 		</section>
 		<footer>
-			<!-- Footer content -->
 		</footer>
-		<script src="scripts/navbar.js"></script>
+		<script defer src="scripts/navbar.js"></script>
 		<script defer src="scripts/login.js"></script>
 	</body>
 </html>
