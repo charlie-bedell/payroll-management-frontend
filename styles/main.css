@@ -1,0 +1,33 @@
+   body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #main-nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    #main-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+			flex: 1;
+			justify-content: space-around;
+    }
+
+    #main-nav li {
+      margin-right: 15px;
+    }
+
+    #main-nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    #main-nav a:hover {
+      color: cyan; /* Change the color on hover */
+    }

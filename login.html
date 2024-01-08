@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/login.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<title>Login</title>
+	</head>
+	<body>
+		<header>
+			<h1>Login Page</h1>
+			<nav id="main-nav"></nav>
+		</header>
+		<section>
+			<div id="card">
+				<div id="card-content">
+					<div id="card-title">
+						<h2>LOGIN</h2>
+						<div class="underline-title"></div>
+					</div>
+					<div class="form-wrapper">
+						<form class="form" id="login-form">
+							<label for="user-email">
+								Email
+							</label>
+							<input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+							<label for="user-password">Password
+							</label>
+							<input id="user-password" class="form-content" type="password" name="password" required />
+							<div class="btn-wrapper">
+								<input id="submit-btn" type="submit" name="submit" value="LOGIN" />
+							</div>
+							<div class="signup-wrapper">
+								<a href="signup.html" id="signup">Don't have account yet?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<p id="error-display"></p>
+			</div>
+		</section>
+		<footer>
+		</footer>
+		<script defer src="scripts/navbar.js"></script>
+		<script defer src="scripts/login.js"></script>
+	</body>
+</html>
