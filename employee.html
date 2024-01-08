@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/employee.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<title id="head-title">EMPLOYEE</title>
+	</head>
+	<body>
+		<header>
+			<nav id="main-nav"></nav>
+		</header>
+		<section>
+			<div id="employee-container">
+				<h3 id="name-header" class="field-header">NAME</h3>
+				<div id="field-container">
+					
+					<h3 class="field-header">Department</h3>
+					<div class="value-wrapper"><p id="department"></p><button class="edit-btn">Edit</button></div>
+					<h3 class="field-header">Country</h3>
+					<div class="value-wrapper"><p id="country"></p><button class="edit-btn">Edit</button></div>
+					<h3 class="field-header">Salary</h3>
+					<div class="value-wrapper"><p id="salary"></p><button class="edit-btn">Edit</button></div>
+					<h3 class="field-header">Bonus</h3>
+					<div class="value-wrapper"><p id="bonus"></p><button class="edit-btn">Edit</button></div>
+				</div>
+				<div id="update-buttons">
+					<button class="update-btn">Publish</button>
+					<button class="delete-btn">Delete</button>
+				</div>
+			</div>
+		</section>
+		<footer>
+		</footer>
+		<script defer src="scripts/navbar.js"></script>
+		<script defer src="scripts/employee.js"></script>
+	</body>
+</html>
